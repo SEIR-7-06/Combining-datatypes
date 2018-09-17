@@ -253,6 +253,26 @@ const movies = [
 * Use **Object.keys** loop to print all the values of the movie object.
 * 10 minutes
 ```
+
+
+
+## Comparing Objects
+
+In JavaScript, if two objects are created separately, they are distinct, even if they are given the same properties.
+
+```javascript
+var student = {name: "Chris"};
+=> undefined
+
+var student2 = {name: "Chris"};
+=> undefined
+
+student == student2
+=> false
+
+student === student
+=> true
+```
 <br>
 <hr>
 Licence
