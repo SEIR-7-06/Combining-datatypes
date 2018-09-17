@@ -7,13 +7,8 @@
 1. Understand what ```this``` is.
 1. Review object methods
 1. Create Objects
+1. for ... in loop
 
-
-## Setup
-
-1. Inside `student_examples` directory for today make a directory called `oop_objects`
-2. Inside the `oop_objects` directory, add an `index.html` and an `app.js` inside a javascripts folder and link them together.
-3.  Add a `console.log()` to your `app.js` and check to see that it is loading in your chrome console.
 
 ### Object quick review
 
