@@ -133,6 +133,130 @@ const game = {
 
 
 
+## LOOPING OVER OBJECTS
+
+There are two way to loop over objects. You can use either way. Both ways involve looping over the object's **keys**.
+
+Let's say we have a movie object:
+
+```javascript
+const movie = { title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 }
+```
+
+<br>
+
+## `for ... in` loop
+
+Print each key:
+
+```javascript
+for (let key in movie) {
+	console.log(key);
+}
+```
+
+> =>
+>
+>title
+>
+>director
+>
+>year
+
+<br>
+
+Print each value:
+
+To do this, use the key as a **variable** within the square brackets.
+
+```javascript
+for (let key in movie) {
+	console.log(movie[key]);
+}
+```
+
+> =>
+>
+>L'Avventura
+>
+>Michelangelo Antonioni
+>
+>1960
+
+<br>
+
+## `Object.keys()`
+
+Object.keys() will return an **array of keys**
+
+```javascript
+console.log(Object.keys(movie));
+```
+
+> => [ 'title', 'director', 'year' ]
+
+To print the values, use the key as a **variable** within square brackets.
+
+```javascript
+const keys = Object.keys(movie);
+
+for (var i=0; i < keys.length; i++) {
+	console.log(movie[keys[i]]);
+}
+```
+
+Unre-factored version:
+
+```javascript
+for (let i=0; i < Object.keys(movie).length; i++) {
+	console.log(movie[Object.keys(movie)[i]]);
+}
+```
+
+<br>
+<hr>
+
+
+# Movie loop
+
+Give the following movie:
+
+```javascript
+const movie = { title: "Eraserhead", director: "David Lynch", year: 1978 }
+```
+
+&#x1F535; **Activity**
+```
+* Use a **for..in** loop to print all the keys of the movie object
+* Use a **for..in** loop to print all the values of the movie object
+* 7 minutes
+```
+<br>
+
+CHALLENGE
+
+With the following array of movie objects:
+
+```javascript
+const movies = [
+               { title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 },
+               { title: "Eraserhead", director: "David Lynch", year: 1978 },
+               { title: "Dayereh", director: "Jafar Panahi", year: 2000 },
+               { title: "Dayereh", director: "Jafar Panahi", year: 2000 }
+             ]
+```
+
+&#x1F535; **Activity**
+```
+* Create an empty object. Leverage the fact that Keys are unique in an object. Loop over the movies array and add the movie titles as keys in the object. This will consequently omit the duplicate movie. At the same time, give each a value of **0** in the object.
+* The result should be this: `{"L'Avventura": 0, "Eraserhead": 0, "Dayereh": 0}`
+* Use **Object.keys** loop to print all the values of the movie object.
+* 10 minutes
+```
+<br>
+<hr>
+Licence
+<hr>
 
 
 
