@@ -1,6 +1,4 @@
-![ga](http://mobbook.generalassemb.ly/ga_cog.png)
-
-# Combining data types and Callbacks
+# Objects and This
 
 ## Lesson Objectives
 
