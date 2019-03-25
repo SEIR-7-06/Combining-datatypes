@@ -10,7 +10,7 @@
 
 ### Object quick review
 
-```
+```js
   const garcia = {
       albums: ['shady grove', 'run for the roses', 'hooteroll', 'Garcia', 'Reflections'],
       instruments: ['Vocals', 'pedal steel', 'electric guitar', 'acoustic guitar', 'banjo'],
@@ -57,7 +57,7 @@ Add a method
 
 1.  ```this``` refers to the object that is invoking the method.
 
-```
+```js
 const foo = {
   value: 12,
   getValue() {
@@ -88,7 +88,7 @@ The result is the `window` object.
 
 Try this out:
 
-```
+```js
 const taco = () => {
   console.log(this, ' this is with arrow functions');
 }
@@ -99,7 +99,7 @@ const taco = () => {
 ### Lets play with Intervals
 
 
-```
+```js
 const game = {
   start(){
     const gameTimer = setInterval( () => {
