@@ -119,3 +119,60 @@ const fooey = {
 
 // What if we wanted to use `this` to showcase the title along with each tag output?
 
+/* == Looping over objects == */
+
+const movie = { title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 }
+
+// FOR IN LOOP
+
+// Just keys //
+
+// for (let key in movie) {
+// 	console.log(key);
+// }
+
+// Value of Key //
+
+// for (let key in movie) {
+// 	console.log(movie[key]);
+// }
+
+
+
+// Object.keys() method //
+
+//console.log(Object.keys(movie));
+
+// const keys = Object.keys(movie);
+
+// for (var i=0; i < keys.length; i++) {
+// 	console.log(movie[keys[i]]);
+// }
+
+// for (let i=0; i < Object.keys(movie).length; i++) {
+// 	console.log(movie[Object.keys(movie)[i]]);
+// }
+
+
+/* Activity Practicing Loops */
+
+const movieTwo = { title: "Eraserhead", director: "David Lynch", year: 1978 }
+
+//Use a **for..in** loop to print all the keys of the movie object
+
+// Use a **for..in** loop to print all the values of the movie object
+
+const movies = [
+	{ title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 },
+	{ title: "Eraserhead", director: "David Lynch", year: 1978 },
+	{ title: "Dayereh", director: "Jafar Panahi", year: 2000 },
+	{ title: "Dayereh", director: "Jafar Panahi", year: 2000 }
+]
+
+// Create an empty object. Leverage the fact that Keys are unique in an object. Loop over the movies array and add the movie titles as keys in the object. This will consequently omit the duplicate movie. At the same time, give each a value of **0** in the object.
+
+// The result should be this: `{"L'Avventura": 0, "Eraserhead": 0, "Dayereh": 0}`
+
+// Use **Object.keys** loop to print all the values of the movie object.
+
+
