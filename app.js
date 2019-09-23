@@ -101,13 +101,12 @@ function showThis() {
 	console.log(this);
 }
 
-// Constructor Function with new keyword
-// Notice the capital? This is because we capitalize constructor functions and classes in js. So don't capitalize your functions otherwise.
-function ConstructorFunc(value) {
-	this.value = value;
-}
+// Arrow function -> global (window, global scope[in node])
+const thisArrow = () => {
+	console.log(this);
+};
+// you can prove it with this.hello = 'hello';
 
-const newFunc = new ConstructorFunc('look a value!'); // new keyword returns {}
 
 // Let's use `this` to loop through some content in an object.
 // Add a method to log all tags using this
